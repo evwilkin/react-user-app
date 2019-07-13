@@ -3,12 +3,16 @@ import TableData from './TableData';
 import UserEmail from './UserEmail';
 import UserAddress from './UserAddress';
 
+import { Link } from 'react-router-dom';
+
 const UserRow = props => {
-  const { name, username, email, address } = props.user;
+  const { id, name, username, email, address } = props.user;
   return (
     <tr>
       <TableData>
-        {name}
+        <Link to={`/${id}`}>
+          {name}
+        </Link>
       </TableData>
       <TableData>
         {username}
