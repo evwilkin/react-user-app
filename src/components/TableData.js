@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class TableData extends Component {
-  render () {
-    return <td>{this.props.children}</td>
-  }
-}
+const TableData = props => <td>{props.children}</td>;
+
+export default TableData;

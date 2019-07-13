@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import TableRow from './TableRow';
+import React from 'react';
 
-export default class TableHead extends Component {
-  state = {
-    headers: ['Name', 'Username', 'E-mail', 'Address']
-  }
+const TableHead = () =>(
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>E-mail</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+);
 
-  render () {
-    return (
-      <thead>
-        <TableRow data={this.state.headers} />
-      </thead>
-    )
-  }
-}
+export default TableHead;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TableHead from './TableHead';
 import TableBody from './TableBody';
 
-export default class Table extends Component {
+export default class UserTable extends Component {
   state = {
     users: []
   }
