@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import UserTable from './components/UserTable';
-import ShowUser from './components/ShowUser'
+import UserTable from './components/Table/UserTable';
+import ShowUser from './components/User/ShowUser';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 

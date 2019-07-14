@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserItemHeader from './UserItemHeader';
+import UserItemHeader from './UserItemHeader/UserItemHeader';
 import UserItemContainer from './UserItemContainer';
 
 export default class ToggleWrapper extends Component {

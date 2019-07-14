@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ToggleWrapper from './ToggleWrapper';
-import UserItemHeader from './UserItemHeader';
+import UserItemHeader from './UserItemHeader/UserItemHeader';
 
 export default class UserItem extends Component {
   state = {

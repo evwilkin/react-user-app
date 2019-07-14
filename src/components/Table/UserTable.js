@@ -1,4 +1,5 @@
 import React from 'react';
+import './UserTable.css';
 import TableHead from './TableHead';
 import TableBody from './TableBody';
 
