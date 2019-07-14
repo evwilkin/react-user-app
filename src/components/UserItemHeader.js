@@ -5,7 +5,7 @@ const UserItemHeader = props => {
   const { objKey, obj, isNestedObject } = props;
 
   return (
-    <div className="list-group-item-header">
+    <div className="list-group-item-header" onClick={props.toggle}>
 
       {/* Only show if subitems */}
       { isNestedObject &&
@@ -33,5 +33,9 @@ const UserItemHeader = props => {
     </div>
   )
 };
+
+UserItemHeader.defaultProps = {
+  expand: null
+}
 
 export default UserItemHeader;
