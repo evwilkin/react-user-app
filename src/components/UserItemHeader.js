@@ -9,7 +9,7 @@ const UserItemHeader = props => {
 
       {/* Only show if subitems */}
       { isNestedObject &&
-        <ExpandArrow />
+        <ExpandArrow isExpanded={props.isExpanded} />
       }
 
       <div className="list-view-pf-main-info">
@@ -35,7 +35,8 @@ const UserItemHeader = props => {
 };
 
 UserItemHeader.defaultProps = {
-  expand: null
+  expand: null,
+  isExpanded: false
 }
 
 export default UserItemHeader;
