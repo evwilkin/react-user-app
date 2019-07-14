@@ -2,13 +2,13 @@ table,
 td,
 th {
   border: 1px solid black;
-  white-space: pre;
 }
 
 table {
   border-collapse: collapse;
   text-align: left;
   margin: 20px auto;
+  word-break: break-all;
 }
 
 tr {
