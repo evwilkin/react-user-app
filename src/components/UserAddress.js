@@ -10,8 +10,10 @@ class UserAddress extends Component {
     try {
       const zip = this.props.address.zipcode.substr(0,5);
       const zipLookup = await zipcodes.lookup(zip);
-      const state = zipLookup.state;
-      this.setState({ state });
+      if (zipLookup) {
+        const state = zipLookup.state;
+        this.setState({ state });
+      }
     } catch (err) {
       console.log(err);
     }
