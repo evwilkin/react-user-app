@@ -5,8 +5,7 @@ const ExpandArrow = props => {
     ? "fa fa-angle-right fa-angle-down"
     : "fa fa-angle-right";
   const style={
-    paddingLeft: '5px',
-    paddingRight: '15px'
+    marginLeft: '-15px'
   }
 
   return (
