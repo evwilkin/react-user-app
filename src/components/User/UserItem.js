@@ -3,14 +3,6 @@ import ToggleWrapper from './ToggleWrapper';
 import UserItemHeader from './UserItemHeader/UserItemHeader';
 
 export default class UserItem extends Component {
-  state = {
-    isVisible: false
-  }
-
-  toggleVisibility = () => {
-    this.setState({ isVisible: !this.state.isVisible })
-  }
-
   render () {
     const { user, objKey } = this.props;
     let n = 0;
@@ -24,19 +16,18 @@ export default class UserItem extends Component {
           <ToggleWrapper
             objKey={objKey}
             obj={obj}
-            getKey={getKey}
             nestedObject={nestedObject}
             buildNestedTable={buildNestedTable}
+            key={getKey()}
           />
         )
       } else {
         return (
-          <div className="list-group-item">
+          <div key={getKey()} className="list-group-item">
             <UserItemHeader
               objKey={objKey}
               obj={obj}
               isNestedObject={false}
-              key={getKey()}
             />
           </div>
         )

@@ -12,21 +12,17 @@ export default class ToggleWrapper extends Component {
   }
 
   render() {
-    const { objKey, obj, getKey, nestedObject, buildNestedTable } = this.props;
+    const { objKey, obj, nestedObject, buildNestedTable } = this.props;
     return (
       <div className="list-group-item">
         <UserItemHeader
           objKey={objKey}
           obj={obj}
           isNestedObject={true}
-          key={getKey()}
           toggle={this.toggleVisibility}
           isExpanded={this.state.isExpanded}
         />
-        <UserItemContainer
-          key={getKey()}
-          isVisible={this.state.isExpanded}
-        >
+        <UserItemContainer isVisible={this.state.isExpanded}>
           { Object.keys(nestedObject).map(nestedKey => buildNestedTable(nestedObject, nestedKey)) }
         </UserItemContainer>
       </div>
