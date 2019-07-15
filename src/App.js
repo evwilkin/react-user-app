@@ -13,7 +13,16 @@ class App extends Component {
   componentDidMount = async () => {
     const data = await fetch('http://jsonplaceholder.typicode.com/users');
     const users = await data.json();
-    this.setState({ users });
+    const usersDescendingByName = [...users].sort((a,b) => {
+      const name1 = a.name.toUpperCase();
+      const name2 = b.name.toUpperCase();
+      return (name1 < name2)
+        ? 1
+        : (name2 < name1)
+          ? -1
+          : 0;
+    })
+    this.setState({ users: usersDescendingByName });
   }
 
   render() {

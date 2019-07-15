@@ -1,6 +1,6 @@
 import React from 'react';
 import './UserItemHeader.css';
-import ExpandArrow from '../ExpandArrow';
+import ExpandArrow from './ExpandArrow';
 
 const UserItemHeader = props => {
   const { objKey, obj, isNestedObject } = props;
