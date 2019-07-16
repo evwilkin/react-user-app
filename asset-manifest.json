@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-user-table/static/css/main.887e895e.chunk.css",
+    "main.js": "/react-user-table/static/js/main.193dea91.chunk.js",
+    "main.js.map": "/react-user-table/static/js/main.193dea91.chunk.js.map",
+    "runtime~main.js": "/react-user-table/static/js/runtime~main.b4f04161.js",
+    "runtime~main.js.map": "/react-user-table/static/js/runtime~main.b4f04161.js.map",
+    "static/js/2.8daaa50e.chunk.js": "/react-user-table/static/js/2.8daaa50e.chunk.js",
+    "static/js/2.8daaa50e.chunk.js.map": "/react-user-table/static/js/2.8daaa50e.chunk.js.map",
+    "index.html": "/react-user-table/index.html",
+    "precache-manifest.faa437bdf5d602a834fadb42f3ad4696.js": "/react-user-table/precache-manifest.faa437bdf5d602a834fadb42f3ad4696.js",
+    "service-worker.js": "/react-user-table/service-worker.js",
+    "static/css/main.887e895e.chunk.css.map": "/react-user-table/static/css/main.887e895e.chunk.css.map"
+  }
+}
