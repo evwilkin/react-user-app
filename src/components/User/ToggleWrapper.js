@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import UserItemHeader from './UserItemHeader/UserItemHeader';
 import UserItemContainer from './UserItemContainer';
+import PropTypes from 'prop-types';
 
 export default class ToggleWrapper extends Component {
   state = {
@@ -28,4 +29,11 @@ export default class ToggleWrapper extends Component {
       </div>
     )
   }
+}
+
+ToggleWrapper.propTypes = {
+  objKey: PropTypes.string,
+  obj: PropTypes.object,
+  nestedObject: PropTypes.object,
+  buildNestedTable: PropTypes.func
 }

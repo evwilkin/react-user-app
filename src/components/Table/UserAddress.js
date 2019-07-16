@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import zipcodes from 'zipcodes';
+import PropTypes from 'prop-types';
 
 class UserAddress extends Component {
   state = {
@@ -20,14 +21,19 @@ class UserAddress extends Component {
   }
 
   render () {
+    const { address } = this.props;
     return (
       <React.Fragment>
-        <p>{this.props.address.street}</p>
-        <p>{this.props.address.suite}</p>
-        <p>{this.props.address.city}{this.state.state ? `, ${this.state.state}` : null} {this.props.address.zipcode}</p>
+        <p>{address.street}</p>
+        <p>{address.suite}</p>
+        <p>{address.city}{this.state.state ? `, ${this.state.state}` : null} {address.zipcode}</p>
       </React.Fragment>
     );
   }
+}
+
+UserAddress.propTypes = {
+  address: PropTypes.object
 }
 
 export default UserAddress;

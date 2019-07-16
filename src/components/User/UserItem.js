@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ToggleWrapper from './ToggleWrapper';
 import UserItemHeader from './UserItemHeader/UserItemHeader';
+import PropTypes from 'prop-types';
 
 export default class UserItem extends Component {
   render () {
@@ -38,4 +39,9 @@ export default class UserItem extends Component {
 
     return userItems;
   }
+}
+
+UserItem.propTypes = {
+  objKey: PropTypes.string,
+  user: PropTypes.object
 }

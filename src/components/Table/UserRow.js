@@ -2,6 +2,7 @@ import React from 'react';
 import TableData from './TableData';
 import UserEmail from './UserEmail';
 import UserAddress from './UserAddress';
+import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
 
@@ -25,6 +26,10 @@ const UserRow = props => {
       </TableData>
     </tr>
   );
+}
+
+UserRow.propTypes = {
+  user: PropTypes.object
 }
 
 export default UserRow;

@@ -1,12 +1,13 @@
 import React from 'react';
 import './UserItemHeader.css';
 import ExpandArrow from './ExpandArrow';
+import PropTypes from 'prop-types';
 
 const UserItemHeader = props => {
-  const { objKey, obj, isNestedObject } = props;
+  const { objKey, obj, isNestedObject, toggle } = props;
 
   return (
-    <div className="list-group-item-header" onClick={props.toggle}>
+    <div className="list-group-item-header" onClick={toggle}>
 
       {/* Only show if subitems */}
       { isNestedObject &&
@@ -36,8 +37,14 @@ const UserItemHeader = props => {
 };
 
 UserItemHeader.defaultProps = {
-  expand: null,
   isExpanded: false
+}
+
+UserItemHeader.propTypes = {
+  isNestedObject: PropTypes.bool,
+  obj: PropTypes.object,
+  objKey: PropTypes.string,
+  toggle: PropTypes.func
 }
 
 export default UserItemHeader;

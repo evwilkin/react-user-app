@@ -1,5 +1,6 @@
 import React from 'react';
 import UserRow from './UserRow';
+import PropTypes from 'prop-types';
 
 const TableBody = props => (
   <tbody>
@@ -8,5 +9,9 @@ const TableBody = props => (
     })}
   </tbody>
 );
+
+TableBody.propTypes = {
+  users: PropTypes.array
+}
 
 export default TableBody;

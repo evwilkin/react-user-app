@@ -1,6 +1,7 @@
 import React from 'react';
 import UserItem from './UserItem';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const ShowUser = props => {
   const userId = Number(props.match.params.id);
@@ -23,6 +24,10 @@ const ShowUser = props => {
       </div>
     </div>
   );
+}
+
+ShowUser.propTypes = {
+  users: PropTypes.array
 }
 
 export default ShowUser;
